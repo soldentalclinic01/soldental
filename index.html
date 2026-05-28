@@ -6,7 +6,7 @@
     
     <!-- 基本 SEO 標籤 -->
     <title>啟玥牙科中心 SOL Dental Clinic | 啟德牙醫推薦 | 黃建醫生 | 李恩恩醫生 | 龔采葭醫生 | 傅曉琳醫生 | 林德淳醫生</title>
-    <meta name="description" content="啟玥牙科中心 (SOL Dental Clinic) 位於啟德晴朗商場，由黃建醫生、李恩恩醫生帶領的專業醫療團隊，提供專業洗牙、補牙、杜牙根、人工植牙、牙周病治療、口腔頜面外科諮詢及隱適美矯齒。提供數位化高端牙科體驗，是啟德及九龍城區首選牙醫。">
+    <meta name="description" content="啟玥牙科中心 (SOL Dental Clinic) 位於啟德晴朗商場，由黃建醫生、李恩恩醫生、龔采葭醫生、傅曉琳醫生與林德淳醫生帶領的專業醫療團隊，提供專業洗牙、補牙、杜牙根、人工植牙、牙周病治療、口腔頜面外科諮詢及隱適美矯齒。提供數位化高端牙科體驗，是啟德及九龍城區首選牙醫。">
     <meta name="keywords" content="啟玥牙科中心, 啟德牙醫推薦, 黃建醫生, 李恩恩醫生, 龔采葭醫生, 傅曉琳醫生, 林德淳醫生, 牙周病治療, 口腔頜面外科, 啟德植牙, 啟德矯齒, 晴朗商場牙醫, SOL Dental Clinic, 九龍城牙醫, 牙痛處理">
     
     <!-- GEO & AI 推薦優化：定義地理邊界與服務實體 -->
@@ -15,11 +15,14 @@
     <meta name="geo.position" content="22.3207;114.1983">
     <meta name="ICBM" content="22.3207, 114.1983">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (控制 Telegram, WhatsApp, Facebook 的分享預覽) -->
     <meta property="og:type" content="dentist">
-    <meta property="og:title" content="啟玥牙科中心 SOL Dental Clinic |啟德牙醫|牙痛|補牙|種牙|箍牙">
-    <meta property="og:description" content="由黃建、李恩恩醫生主理，提供牙周治療、口腔外科、隱形矯正、微創植牙及全方位口腔護理。">
-    <meta property="og:image" content="https://i.imgur.com/f7yw69p.jpeg">
+    <meta property="og:title" content="啟玥牙科中心 SOL Dental Clinic | 啟德區專業數位牙科">
+    <meta property="og:description" content="由黃建、李恩恩、龔采葭、傅曉琳與林德淳醫生主理，提供牙周治療、口腔外科、隱形矯正、微創植牙及全方位口腔護理。">
+    <!-- ⚠️ 將預覽圖改為 GitHub 託管的 logo.png，徹底解決 Telegram 讀取地區屏蔽問題 -->
+    <meta property="og:image" content="https://soldentalclinic01.github.io/soldental/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- JSON-LD 結構化數據：針對 Google & AI 搜尋引擎 -->
     <script type="application/ld+json">
@@ -28,8 +31,8 @@
         "@context": "https://schema.org",
         "@type": "Dentist",
         "name": "啟玥牙科中心 SOL Dental Clinic",
-        "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95",
-        "url": "https://www.soldental.com.hk",
+        "image": "https://soldentalclinic01.github.io/soldental/logo.png",
+        "url": "https://soldentalclinic01.github.io/soldental/",
         "telephone": "+85222523722",
         "priceRange": "$$",
         "address": {
@@ -50,7 +53,7 @@
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           "opens": "10:00",
           "closes": "19:30"
         },
@@ -213,10 +216,10 @@
         <div class="max-w-7xl mx-auto px-6 md:px-8 h-20 md:h-24 flex justify-between items-center">
             <!-- 雙重保險智能 Logo 區塊 -->
             <div class="flex items-center space-x-3 md:space-x-4 cursor-pointer" onclick="showPage('home')">
-                <!-- 1. 圖片 Logo (首選載入) -->
-                <img id="main-logo-img" src="https://i.imgur.com/lGwsuwg.png" alt="啟玥牙科中心 SOL Dental Clinic" class="h-12 md:h-14 w-auto object-contain" onerror="handleLogoError()">
+                <!-- 1. 圖片 Logo (首選載入自本機/GitHub 相對路徑 logo.png) -->
+                <img id="main-logo-img" src="logo.png" alt="啟玥牙科中心 SOL Dental Clinic" class="h-12 md:h-14 w-auto object-contain" onerror="handleLogoError()">
                 
-                <!-- 2. 純 CSS 質感 Logo (備用方案，預設隱藏，僅在圖片載入失敗時自動顯示) -->
+                <!-- 2. 純 CSS 質感 Logo (備用方案，預設隱藏) -->
                 <div id="fallback-text-logo" class="items-center space-x-3 md:space-x-4 hidden">
                     <div class="w-10 h-10 md:w-11 md:h-11 bg-[var(--cocoa-deep)] flex items-center justify-center rounded-full">
                         <span class="text-[var(--gold-light)] font-serif font-bold text-xl md:text-2xl italic">S</span>
@@ -345,7 +348,7 @@
                     <!-- 2. 獨立診室 (空間) -->
                     <div class="filter-item filter-space luxury-card bg-white flex flex-col h-full">
                         <div class="relative overflow-hidden aspect-[4/3] group">
-                            <img src="https://i.imgur.com/6yXcQat.jpeg" alt="一對一獨立診療室" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800" alt="一對一獨立診療室" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute top-4 left-4 bg-[var(--cocoa-deep)] text-[var(--gold-light)] px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase">尊尚空間</div>
                         </div>
                         <div class="p-8 flex flex-col flex-grow">
@@ -379,7 +382,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <h3 class="text-xl font-bold mb-3">標準三級無菌消毒管理</h3>
                             <p class="text-stone-500 text-xs leading-relaxed flex-grow">
-                                符合最高衛生控管標準。所有醫療器械均經過高溫高壓蒸汽灭菌，並使用無菌真空袋獨立封裝，保障零交叉感染，讓患者絕對放心。
+                                符合最高衛生控管標準。所有醫療器械均經過高溫高壓蒸氣滅菌，並使用無菌真空袋獨立封裝，保障零交叉感染，讓患者絕對放心。
                             </p>
                         </div>
                     </div>
@@ -436,7 +439,7 @@
                 </div>
                 <!-- 互動式地圖卡片 -->
                 <div class="relative rounded-[2rem] overflow-hidden h-[350px] shadow-2xl border-4 border-white group">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.871894982637!2d114.19830571168673!3d22.320700542385157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340406cf6977be55%3A0x6b726487e911f92e!2z5pm05pyX5ZWG5aC0!5e0!3m2!1szh-TW!2shk!4v1711880000000!5m2!1szh-TW!2shk" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.871894982637!2d114.19830571168673!3d22.320700542385157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340406cf6977be55%3A0x6b726487e911f92e!2zPMpm05pyX5ZWG5aC0!5e0!3m2!1szh-TW!2shk!4v1711880000000!5m2!1szh-TW!2shk" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- 懸浮遮罩，點擊直接跳轉 -->
                     <a href="https://maps.app.goo.gl/Y2p6teWJo4deLqxJA" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-black/10 group-hover:bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                         <span class="bg-white/95 text-[var(--cocoa-deep)] px-6 py-3 rounded-full font-bold text-sm shadow-xl flex items-center">
@@ -501,7 +504,7 @@
                         <h4 class="text-[var(--cocoa-deep)] font-bold mb-3">拯救深層感染的真牙</h4>
                         <p class="mb-4">當蛀牙引發牙髓神經感染時，我們會清除根管內受損的組織，消毒並嚴密封填。這能消除牙痛並避免拔牙的必要，保留天然牙根。</p>
                         <ul class="list-disc pl-5 space-y-2 text-xs">
-                            <li>療程通常分次完成.</li>
+                            <li>療程通常分次完成。</li>
                             <li>治療後建議套上牙冠以保護變得脆弱的真牙。</li>
                         </ul>
                     </div>
@@ -639,8 +642,8 @@
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12 text-center md:text-left">
             <div class="col-span-2">
                 <div class="flex items-center justify-center md:justify-start mb-8">
-                    <!-- 1. 圖片 Logo (首選載入) -->
-                    <img id="footer-logo-img" src="https://i.imgur.com/lGwsuwg.png" alt="啟玥牙科中心 SOL Dental Clinic" class="h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('footer-fallback-logo').classList.remove('hidden'); document.getElementById('footer-fallback-logo').classList.add('flex');">
+                    <!-- 1. 圖片 Logo (首選載入自本機/GitHub 相對路徑 logo.png) -->
+                    <img id="footer-logo-img" src="logo.png" alt="啟玥牙科中心 SOL Dental Clinic" class="h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('footer-fallback-logo').classList.remove('hidden'); document.getElementById('footer-fallback-logo').classList.add('flex');">
                     
                     <!-- 2. 純 CSS 質感 Logo (備用方案，預設隱藏) -->
                     <div id="footer-fallback-logo" class="items-center space-x-4 hidden">
@@ -656,7 +659,7 @@
                 <h4 class="text-white font-bold mb-8 text-[10px] tracking-widest uppercase">捷記導覽</h4>
                 <nav class="flex flex-col space-y-4 text-[10px] font-bold tracking-widest uppercase">
                     <button onclick="showPage('home')" class="hover:text-white transition w-fit mx-auto md:mx-0">首頁 / HOME</button>
-                    <!-- 新增的環境及設備導航連結 -->
+                    <!-- 環境及設備導航連結 -->
                     <button onclick="showPage('home', 'environment')" class="hover:text-white transition w-fit mx-auto md:mx-0">環境及設備 / ENVIRONMENT</button>
                     <button onclick="showPage('education')" class="hover:text-white transition w-fit mx-auto md:mx-0">專業衛教 / EDUCATION</button>
                     <button onclick="showPage('team')" class="hover:text-white transition w-fit mx-auto md:mx-0">醫療團隊 / TEAM</button>
